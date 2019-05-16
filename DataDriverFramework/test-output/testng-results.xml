@@ -4,28 +4,46 @@
     <line>
       <![CDATA[Login successfully executed....!!]]>
     </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png">screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png"><img src="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png" height=200 width=200></img></a>]]>
+    </line>
   </reporter-output>
-  <suite started-at="2019-05-15T12:56:10Z" name="Data Driven Basics" finished-at="2019-05-15T12:56:14Z" duration-ms="4403">
+  <suite started-at="2019-05-16T12:42:00Z" name="Data Driven Basics" finished-at="2019-05-16T12:42:05Z" duration-ms="4595">
     <groups>
     </groups>
-    <test started-at="2019-05-15T12:56:10Z" name="Bank Manager Login Test" finished-at="2019-05-15T12:56:13Z" duration-ms="3205">
+    <test started-at="2019-05-16T12:42:00Z" name="Bank Manager Login Test" finished-at="2019-05-16T12:42:03Z" duration-ms="3300">
       <class name="com.tb.testcases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:com.tb.testcases.BankManagerLoginTest@1dd0e7c4]" started-at="2019-05-15T12:56:10Z" name="loginAsBankManager" finished-at="2019-05-15T12:56:13Z" duration-ms="3175" status="PASS">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.tb.testcases.BankManagerLoginTest@1dd0e7c4]" started-at="2019-05-16T12:42:00Z" name="loginAsBankManager" finished-at="2019-05-16T12:42:03Z" duration-ms="3269" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Login successfully executed....!!]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png">screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png"><img src="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png" height=200 width=200></img></a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.tb.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2019-05-15T12:56:13Z" name="Add Customer Test" finished-at="2019-05-15T12:56:14Z" duration-ms="1074">
+    <test started-at="2019-05-16T12:42:03Z" name="Add Customer Test" finished-at="2019-05-16T12:42:05Z" duration-ms="1263">
       <class name="com.tb.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-15T12:56:02Z" name="setUp" finished-at="2019-05-15T12:56:10Z" duration-ms="7500" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-16T12:41:51Z" name="setUp" finished-at="2019-05-16T12:42:00Z" duration-ms="8985" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-15T12:56:13Z" name="AddCustomer" data-provider="getData" finished-at="2019-05-15T12:56:14Z" duration-ms="1051" status="PASS">
+        <test-method signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-16T12:42:03Z" name="AddCustomer" data-provider="getData" finished-at="2019-05-16T12:42:05Z" duration-ms="1244" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -51,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-15T12:56:14Z" name="tearDown" finished-at="2019-05-15T12:56:15Z" duration-ms="779" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tb.testcases.AddCustomerTest@4264b240]" started-at="2019-05-16T12:42:05Z" name="tearDown" finished-at="2019-05-16T12:42:06Z" duration-ms="880" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
