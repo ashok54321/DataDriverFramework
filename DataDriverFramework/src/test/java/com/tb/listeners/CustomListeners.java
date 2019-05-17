@@ -19,13 +19,13 @@ public class CustomListeners implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
-		Reporter.log("<a href=\"C:\\Users\\Ashok\\Downloads\\error.jpeg\" target=\"_blank\">Screenshot link</a>");
+		Reporter.log("Capture screenshots");
+		Reporter.log("<a target=\"_blank\" href=\"C:\\Users\\TB-DB\\Pictures\\Screenshots\\Screenshot.png\">screenshot</a>");
 		Reporter.log("<br>");
-		Reporter.log("<a href=\"C:\\Users\\Ashok\\Downloads\\error.jpeg\" target=\"_blank\"><img width=150 height=150 src=\"C:\\Users\\Ashok\\Downloads\\error.jpeg\"></a>");
-		
-		System.out.println("Capture screenshot for failed test --> "+result.getName());
-		
+		Reporter.log("<a target=\"_blank\" href=\"C:\\Users\\TB-DB\\Pictures\\Screenshots\\Screenshot.png\"><img src=\"C:\\Users\\TB-DB\\Pictures\\Screenshots\\Screenshot.png\" height=200 width=200></img></a>");
+	
 	}
 
 	public void onTestSkipped(ITestResult result) {
