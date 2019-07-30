@@ -14,12 +14,12 @@
       <![CDATA[<a target="_blank" href="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png"><img src="C:\Users\TB-DB\Pictures\Screenshots\Screenshot.png" height=200 width=200></img></a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2019-05-17T12:29:54Z" name="Data Driven Basics" finished-at="2019-05-17T12:29:58Z" duration-ms="4711">
+  <suite started-at="2019-07-29T12:21:51Z" name="Data Driven Basics" finished-at="2019-07-29T12:21:56Z" duration-ms="5041">
     <groups>
     </groups>
-    <test started-at="2019-05-17T12:29:54Z" name="Bank Manager Login Test" finished-at="2019-05-17T12:29:57Z" duration-ms="3296">
+    <test started-at="2019-07-29T12:21:51Z" name="Bank Manager Login Test" finished-at="2019-07-29T12:21:55Z" duration-ms="3666">
       <class name="com.tb.testcases.BankManagerLoginTest">
-        <test-method signature="loginAsBankManager()[pri:0, instance:com.tb.testcases.BankManagerLoginTest@7894f09b]" started-at="2019-05-17T12:29:54Z" name="loginAsBankManager" finished-at="2019-05-17T12:29:57Z" duration-ms="3248" status="FAIL">
+        <test-method signature="loginAsBankManager()[pri:0, instance:com.tb.testcases.BankManagerLoginTest@34a75079]" started-at="2019-07-29T12:21:51Z" name="loginAsBankManager" finished-at="2019-07-29T12:21:55Z" duration-ms="3639" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Login failed]]>
@@ -73,13 +73,13 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.tb.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test started-at="2019-05-17T12:29:57Z" name="Add Customer Test" finished-at="2019-05-17T12:29:58Z" duration-ms="1328">
+    <test started-at="2019-07-29T12:21:55Z" name="Add Customer Test" finished-at="2019-07-29T12:21:56Z" duration-ms="1329">
       <class name="com.tb.testcases.AddCustomerTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tb.testcases.AddCustomerTest@5b04476e]" started-at="2019-05-17T12:29:46Z" name="setUp" finished-at="2019-05-17T12:29:54Z" duration-ms="7803" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.tb.testcases.AddCustomerTest@423e4cbb]" started-at="2019-07-29T12:21:43Z" name="setUp" finished-at="2019-07-29T12:21:51Z" duration-ms="8266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tb.testcases.AddCustomerTest@5b04476e]" started-at="2019-05-17T12:29:57Z" name="AddCustomer" data-provider="getData" finished-at="2019-05-17T12:29:58Z" duration-ms="1291" status="PASS">
+        <test-method signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.tb.testcases.AddCustomerTest@423e4cbb]" started-at="2019-07-29T12:21:55Z" name="AddCustomer" data-provider="getData" finished-at="2019-07-29T12:21:56Z" duration-ms="1293" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCustomer -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tb.testcases.AddCustomerTest@5b04476e]" started-at="2019-05-17T12:29:58Z" name="tearDown" finished-at="2019-05-17T12:29:59Z" duration-ms="860" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tb.testcases.AddCustomerTest@423e4cbb]" started-at="2019-07-29T12:21:56Z" name="tearDown" finished-at="2019-07-29T12:21:57Z" duration-ms="895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

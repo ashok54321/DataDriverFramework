@@ -1,4 +1,6 @@
 package com.tb.utilities;
+
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -8,18 +10,14 @@ import org.apache.poi.common.usermodel.HyperlinkType;
 import org.apache.poi.hssf.usermodel.HSSFCellStyle;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
 import org.apache.poi.hssf.util.HSSFColor;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellStyle;
 import org.apache.poi.ss.usermodel.CellType;
-import org.apache.poi.ss.usermodel.FillPatternType;
 import org.apache.poi.ss.usermodel.Hyperlink;
 import org.apache.poi.ss.usermodel.IndexedColors;
-import org.apache.poi.util.Removal;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 import org.apache.poi.xssf.usermodel.XSSFCreationHelper;
 import org.apache.poi.xssf.usermodel.XSSFFont;
-import org.apache.poi.xssf.usermodel.XSSFHyperlink;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -34,9 +32,6 @@ public class ExcelReader {
 	private XSSFSheet sheet = null;
 	private XSSFRow row   =null;
 	private XSSFCell cell = null;
-	
-	@Removal(version="3.17")
-	static final short SOLID_FOREGROUND = 1;
 	
 	public ExcelReader(String path) {
 		
@@ -100,7 +95,7 @@ public class ExcelReader {
 			return "";
 		
 		if(cell.getCellType()==CellType.STRING)
-			  return cell.getStringCellValue();
+			 return cell.getStringCellValue();
 		else if(cell.getCellType()==CellType.NUMERIC || cell.getCellType()==CellType.FORMULA ){
 			  
 			  String cellText  = String.valueOf(cell.getNumericCellValue());
@@ -115,7 +110,8 @@ public class ExcelReader {
 		           cellText = cal.get(Calendar.DAY_OF_MONTH) + "/" +
 		                      cal.get(Calendar.MONTH)+1 + "/" + 
 		                      cellText;
-	
+		           
+		          
 
 		         }
 
@@ -299,7 +295,9 @@ public class ExcelReader {
 	    hlink_style.setFont(hlink_font);
 	    //hlink_style.setWrapText(true);
 
+	    //XSSFHyperlink link = createHelper.createHyperlink(XSSFHyperlink.LINK_FILE);
 	    Hyperlink link = createHelper.createHyperlink(HyperlinkType.FILE);
+	    
 	    link.setAddress(url);
 	    cell.setHyperlink(link);
 	    cell.setCellStyle(hlink_style);
@@ -364,10 +362,9 @@ public class ExcelReader {
 			if(index==-1)
 				return false;
 			
-				
 		XSSFCellStyle style = workbook.createCellStyle();
-		style.setFillForegroundColor(FillPatternType.SOLID_FOREGROUND.getCode());
-		style.setFillPattern(FillPatternType.SOLID_FOREGROUND);
+		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
+		style.setFillPattern(HSSFCellStyle.SOLID_FOREGROUND);
 		
 		sheet=workbook.getSheetAt(index);
 		
@@ -409,9 +406,9 @@ public class ExcelReader {
 		workbook = new XSSFWorkbook(fis);
 		sheet=workbook.getSheet(sheetName);
 		XSSFCellStyle style = workbook.createCellStyle();
-		style.setFillForegroundColor(FillPatternType.SOLID_FOREGROUND.getCode());
+		style.setFillForegroundColor(HSSFColor.GREY_40_PERCENT.index);
 		XSSFCreationHelper createHelper = workbook.getCreationHelper();
-		style.setFillPattern(FillPatternType.NO_FILL);
+		style.setFillPattern(HSSFCellStyle.NO_FILL);
 		
 	    
 	
